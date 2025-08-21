@@ -1,0 +1,27 @@
+h1 {
+    color:rgb(255, 0, 0);
+    font-size:36px;
+    text-align:center;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    font-size:medium ;
+    text-align: left;
+}
+
+.Paragrafo1 {
+    color:rgb(255, 255, 255);
+    font-size: medium;
+    text-align:justify;
+}
+
+.Paragrafo2 {
+    color:rgb(255, 255, 255);
+    font-size:larger;
+    text-align:right;
+}
+
+body {
+     background-color: #2b00a1; 
+}

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoologia Curiosa</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        body {
+            background-color: #fdf6ec; /* bege claro */
+            color: #2c2c2c;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(90deg, #3d2b1f, #5d4037); /* marrom escuro */
+            color: #f7e9c4;
+            padding: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 8px 15px;
+        }
+
+        nav ul li a {
+            color: #f7e9c4;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #8d6e63;
+            color: #fff;
+        }
+
+        section {
+            padding: 50px 25px;
+            border-bottom: 1px solid #d7ccc8;
+        }
+
+        section h2 {
+            color: #3d2b1f;
+            margin-bottom: 15px;
+            font-size: 2em;
+        }
+
+        section p, section li {
+            font-size: 1.1em;
+        }
+
+        .imagens {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .imagens img {
+            width: 230px;
+            height: 170px;
+            object-fit: cover;
+            border: 4px solid #5d4037;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .imagens img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 550px;
+            margin: auto;
+        }
+
+        form label {
+            margin: 12px 0 6px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            padding: 12px;
+            border: 2px solid #5d4037;
+            border-radius: 6px;
+            font-size: 1em;
+        }
+
+        form button {
+            margin-top: 18px;
+            padding: 14px;
+            background-color: #3d2b1f;
+            color: #f7e9c4;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        form button:hover {
+            background-color: #1c130d;
+        }
+
+        footer {
+            background-color: #3d2b1f;
+            color: #f7e9c4;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        .quiz {
+            max-width: 600px;
+            margin: auto;
+            background: #fff3e0;
+            padding: 20px;
+            border: 2px solid #5d4037;
+            border-radius: 8px;
+        }
+
+        .quiz button {
+            margin-top: 10px;
+            background-color: #8d6e63;
+            color: #fff;
+        }
+
+        .quiz button:hover {
+            background-color: #6d4c41;
+        }
+
+        .infografico {
+            background-color: #ffe0b2;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .dicas li {
+            margin-bottom: 8px;
+        }
+
+        .regionais li {
+            margin-bottom: 6px;
+        }
+
+        .animacoes img {
+            width: 200px;
+            height: 140px;
+            margin: 10px;
+            border: 3px solid #8d6e63;
+            border-radius: 10px;
+            transition: transform 0.4s;
+        }
+
+        .animacoes img:hover {
+            transform: rotate(10deg) scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zoologia Curiosa</h1>
+        <nav>
+            <ul>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+                <li><a href="#especies">Espécies Comuns</a></li>
+                <li><a href="#alertas">Alertas & Cuidados</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#mapa">Mapa</a></li>
+                <li><a href="#mitos">Mitos & Verdades</a></li>
+                <li><a href="#videos">Vídeos</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#curiosidades-avancadas">Curiosidades Avançadas</a></li>
+                <li><a href="#raras">Espécies Raras</a></li>
+                <li><a href="#regionais">Curiosidades Regionais</a></li>
+                <li><a href="#interacoes">Interações Ecológicas</a></li>
+                <li><a href="#dicas">Dicas de Prevenção</a></li>
+                <li><a href="#estudos">Estudos Científicos</a></li>
+                <li><a href="#eventos">Eventos & Notícias</a></li>
+                <li><a href="#animacoes">Animações Interativas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="curiosidades">
+        <h2>Curiosidades de Animais</h2>
+        <p>Você sabia que muitas espécies de animais considerados perigosos para o ser humano desempenham papéis fundamentais no equilíbrio da natureza?  
+        Escorpiões ajudam a controlar populações de insetos, serpentes mantêm o equilíbrio das cadeias alimentares, e até aranhas são predadoras essenciais contra pragas urbanas.</p>
+    </section>
+
+    <section id="especies">
+        <h2>Espécies Comuns no Brasil</h2>
+        <p>No Brasil, encontramos uma enorme variedade de espécies, mas algumas são mais comuns em áreas próximas a pessoas:</p>
+        <ul>
+            <li><strong>Cobra Coral:</strong> Apesar da fama, apenas a verdadeira (Micrurus spp.) é venenosa.</li>
+            <li><strong>Aranha Armadeira:</strong> Conhecida pelo comportamento agressivo e veneno potente.</li>
+            <li><strong>Escorpião Amarelo:</strong> Adaptado a ambientes urbanos, escondendo-se em entulhos e roupas.</li>
+            <li><strong>Macacos com doenças zoonóticas:</strong> Como a varíola dos macacos, podem transmitir vírus perigosos.</li>
+        </ul>
+    </section>
+
+    <section id="alertas">
+        <h2>Alertas & Cuidados</h2>
+        <p>Em caso de acidente com animais peçonhentos, algumas medidas são essenciais:</p>
+        <ul>
+            <li>Nunca tente sugar o veneno com a boca.</li>
+            <li>Mantenha a vítima calma e imóvel para evitar espalhar o veneno.</li>
+            <li>Lave o local apenas com água e sabão.</li>
+            <li>Leve imediatamente ao hospital e, se possível, identifique o animal.</li>
+        </ul>
+    </section>
+
+    <section id="caracteristicas">
+        <h2>Características Específicas</h2>
+        <p>Alguns sinais ajudam a diferenciar espécies venenosas das inofensivas:</p>
+        <ul>
+            <li><strong>Cobra Coral Verdadeira:</strong> alternância exata entre vermelho, preto e amarelo.</li>
+            <li><strong>Cobra Coral Falsa:</strong> pode ter padrões semelhantes, mas a ordem das cores difere.</li>
+            <li><strong>Escorpião Amarelo:</strong> cauda bem destacada e corpo amarelado.</li>
+            <li><strong>Aranha Armadeira:</strong> postura de ataque com as pernas dianteiras erguidas.</li>
+        </ul>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria Ilustrativa</h2>
+        <p>Confira algumas imagens para facilitar a identificação visual:</p>
+        <div class="imagens">
+            <img src="imagens/coral.jpg" alt="Cobra Coral">
+            <img src="imagens/armadeira.jpg" alt="Aranha Armadeira">
+            <img src="imagens/escorpiao.jpg" alt="Escorpião Amarelo">
+            <img src="imagens/macaco.jpg" alt="Macaco com Varíola">
+        </div>
+    </section>
+
+    <section id="mapa">
+        <h2>Mapa de Distribuição</h2>
+        <p>Os animais peçonhentos estão distribuídos por todas as regiões do Brasil, mas com destaque para áreas tropicais e urbanizadas, onde há maior disponibilidade de alimento e abrigo.</p>
+    </section>
+
+    <section id="mitos">
+        <h2>Mitos & Verdades</h2>
+        <p><strong>Mito:</strong> "Todas as cobras corais são perigosas."  
+        <br><strong>Verdade:</strong> Muitas espécies de coral são falsas e não oferecem risco ao ser humano.</p>
+        <p><strong>Mito:</strong> "Escorpião só vive em florestas."  
+        <br><strong>Verdade:</strong> Muitos escorpiões adaptaram-se perfeitamente às cidades.</p>
+    </section>
+
+    <section id="videos">
+        <h2>Vídeos Educativos</h2>
+        <p>Assista vídeos curtos para aprender como agir em situações de risco com animais peçonhentos.</p>
+    </section>
+
+    <section id="quiz">
+        <h2>Quiz Interativo</h2>
+        <div class="quiz">
+            <p><strong>Pergunta:</strong> Qual destes animais é considerado o mais comum em áreas urbanas brasileiras?</p>
+            <button onclick="alert('Correto! O Escorpião Amarelo é o mais comum nas cidades.')">Escorpião Amarelo</button>
+            <button onclick="alert('Não exatamente! As aranhas são perigosas, mas menos comuns em áreas urbanas.')">Aranha Armadeira</button>
+            <button onclick="alert('Não! A Cobra Coral prefere áreas de mata.')">Cobra Coral</button>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato com Especialista</h2>
+        <p>Envie suas dúvidas e receba orientação de um especialista em zoologia:</p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Novos Tópicos -->
+    <section id="curiosidades-avancadas">
+        <h2>Curiosidades Avançadas</h2>
+        <p>Alguns comportamentos animais impressionam pesquisadores:</p>
+        <ul>
+            <li>Formigas cortadeiras cultivam fungos como alimento.</li>
+            <li>Polvos conseguem abrir frascos e usar ferramentas simples.</li>
+            <li>Corujas possuem visão noturna tão aguçada que conseguem caçar em quase completa escuridão.</li>
+        </ul>
+    </section>
+
+    <section id="raras">
+        <h2>Espécies Raras</h2>
+        <p>O Brasil abriga espécies raras e ameaçadas de extinção:</p>
+        <ul>
+            <li>Ariranha (Pteronura brasiliensis) – predadora semi-aquática de rios amazônicos.</li>
+            <li>Onça-pintada (Panthera onca) – o maior felino das Américas.</li>
+            <li>Gavião-real (Harpia harpyja) – uma das maiores aves de rapina do mundo.</li>
+        </ul>
+    </section>
+
+    <section id="regionais">
+        <h2>Curiosidades Regionais</h2>
+        <p>Espécies e hábitos que mudam de acordo com a região:</p>
+        <ul class="regionais">
+            <li>Aranhas de cerrado têm padrões diferentes das florestas.</li>
+            <li>Peixes de água doce amazônicos têm cores mais vibrantes.</li>
+            <li>Cobras do pantanal apresentam comportamento mais aquático.</li>
+        </ul>
+    </section>
+
+    <section id="interacoes">
+        <h2>Interações Ecológicas</h2>
+        <p>Como animais interagem e mantêm o equilíbrio ambiental:</p>
+        <ul>
+            <li>Predadores controlam populações de presas, evitando superpopulação.</li>
+            <li>Polinizadores garantem a reprodução de plantas essenciais.</li>
+            <li>Decompositores reciclam nutrientes para o solo.</li>
+        </ul>
+    </section>
+
+    <section id="dicas">
+        <h2>Dicas de Prevenção</h2>
+        <p>Medidas preventivas para evitar acidentes:</p>
+        <ul class="dicas">
+            <li>Evitar acumular entulho ou madeira próxima de casas.</li>
+            <li>Usar luvas ao manusear objetos em áreas de risco.</li>
+            <li>Verificar roupas e calçados antes de vestir.</li>
+            <li>Educar crianças sobre animais peçonhentos.</li>
+        </ul>
+    </section>
+
+    <section id="estudos">
+        <h2>Estudos Científicos</h2>
+        <p>Pesquisas recentes destacam:</p>
+        <ul>
+            <li>O veneno de escorpiões pode ser utilizado em tratamentos de câncer.</li>
+            <li>Cobras corais ajudam a estudar neurotoxinas e seu efeito no sistema nervoso.</li>
+            <li>Aranhas são fontes de biomateriais para fios resistentes.</li>
+        </ul>
+    </section>
+
+    <section id="eventos">
+        <h2>Eventos & Notícias</h2>
+        <p>Participe de exposições e conferências sobre zoologia:</p>
+        <ul>
+            <li>Feira Nacional de Biologia – São Paulo</li>
+            <li>Congresso de Animais Peçonhentos – Rio de Janeiro</li>
+            <li>Workshops de Conservação Ambiental – Online e Presencial</li>
+        </ul>
+    </section>
+
+    <section id="animacoes">
+        <h2>Animações Interativas</h2>
+        <p>Veja algumas representações animadas de animais e seus habitats:</p>
+        <div class="animacoes">
+            <img src="imagens/animacao1.gif" alt="Animação 1">
+            <img src="imagens/animacao2.gif" alt="Animação 2">
+            <img src="imagens/animacao3.gif" alt="Animação 3">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Zoologia Curiosa | Desenvolvido para fins educativos</p>
+    </footer>
+</body>
+</html>
+
