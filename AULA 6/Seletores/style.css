@@ -1,99 +1,103 @@
-p-azul {
-    color: blue;
+.azul { 
+    color: blue; 
 }
 
-
-#titulo-principal {
-    background-color: yellow
+#titulo-principal { 
+    background-color: yellow; 
 }
 
-.subtitulo-classudo {
-    color: green;
+.subtitulo-classudo { 
+    color: green; 
 }
 
-li{
-    color:red
+li { 
+    color: red; 
 }
 
-.caixa1 {
-    background-color: rgb(0, 21, 255);
-}
-.caixa2 {
-    background-color: rgb(255, 0, 0);
-}
-
-p, h2, h3 {
-    color: rgb(0, 0, 0);
+.caixa1 { 
+    background-color: rgb(0, 21, 255); 
+    color: white; /* melhora a leitura */
+    padding: 5px;
 }
 
-#centralizado {
-    text-align: center;
-    color: darkturquoise;
+.caixa2 { 
+    background-color: rgb(255, 0, 0); 
+    color: white; 
+    padding: 5px;
 }
 
-#link-google {
-    color: blue;
-}
-#link-youtube {
-    color: red;
+p, h2, h3 { 
+    color: rgb(0, 0, 0); 
 }
 
-.negrito {
-    font-weight: bold;
-    color: darkgoldenrod;
+#centralizado { 
+    text-align: center; 
+    color: darkturquoise; 
 }
 
-.paragrafo1 {
-    color: darkblue;
+#link-google { 
+    color: blue; 
 }
 
-.paragrafo2{
-    color: deeppink;
+#link-youtube { 
+    color: red; 
 }
 
-#titulo-arial {
-    font-family: Arial, sans-serif;
+.negrito { 
+    font-weight: bold; 
+    color: darkgoldenrod; 
 }
 
-.negrito {
-    font-weight: bold;
+.paragrafo1 { 
+    color: darkblue; 
 }
 
-.italico {
-    font-style: italic;
+.paragrafo2 { 
+    color: deeppink; 
 }
 
-.sublinhado {
-    text-decoration: underline;
+#titulo-arial { 
+    font-family: Arial, sans-serif; 
 }
 
-div h3 {
-    color: olive;
-    font-family: 'Times New Roman', Times, serif;
+.italico { 
+    font-style: italic; 
 }
 
-#div-1 {
-background-color: coral;
+.sublinhado { 
+    text-decoration: underline; 
 }
 
-#div-2{
-background-color:brown;
+div h3 { 
+    color: olive; 
+    font-family: 'Times New Roman', Times, serif; 
 }
 
-#div-3{
- background-color: rgb(115, 103, 96);
+#div-1 { 
+    background-color: coral; 
+    padding: 5px; 
 }
 
-.palavra-destaque{
-    color: violet;
+#div-2 { 
+    background-color: brown; 
+    color: white; 
+    padding: 5px; 
 }
 
-#div123{
-    background-color: goldenrod;
-    border: 3px; color: #fffb05;
-    padding: 10px;
+#div-3 { 
+    background-color: rgb(115, 103, 96); 
+    color: white; 
+    padding: 5px; 
 }
 
-h1, p, a {
-    color: rgb(255, 0, 0);
+.palavra-destaque { 
+    color: violet; 
+    font-weight: bold; 
+}
+
+#div123 { 
+    background-color: rgb(255, 255, 255); 
+    border: 3px solid black; 
+    color: #ffffff; 
+    padding: 10px; 
 }
