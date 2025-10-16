@@ -1,0 +1,7 @@
+body article{
+  border: 3px solid #570101; 
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #ff9191;
+  color: #570101;
+}

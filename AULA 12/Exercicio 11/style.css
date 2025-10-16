@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6f0ff; /* azul claro */
+  color: #003366; /* azul escuro para textos */
+  padding: 20px;
+}
+
+header h1 {
+  text-align: center;
+  color: #0059b3; /* azul médio */
+  margin-bottom: 20px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.event {
+  background-color: #cce0ff; /* azul bem claro */
+  border-left: 4px solid #0059b3; /* azul médio */
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.event h2 {
+  margin: 0 0 5px 0;
+  font-size: 1.1em;
+  color: #003366; /* azul escuro */
+}
+
+.event time {
+  display: block;
+  font-size: 0.9em;
+  color: #004080; /* azul intermediário */
+  margin-bottom: 5px;
+}
+
+.event p {
+  margin: 0;
+  color: #003366; /* azul escuro */
+}

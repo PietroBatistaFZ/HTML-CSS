@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  color: rgb(0, 0, 0);
+
+}
+
+details {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #8e91ef;
+  border-radius: 5px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+details p {
+  margin-top: 5px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <header id="inicio">
+        <div class="container">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Pietro Francisco Batista</h1>
+                    <p>Desenvolvedor | Designer | Criativo</p>
+                    <a href="#contato" class="btn">Entre em Contato</a>
+                </div>
+                    <div class="profile-photo">
+                        <img src="PIETRO.jfif" alt="Foto do Perfil">
+                    </div>
+
+    <div class="container">
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou o Pietro, um profissional apaixonado por tecnologia e criatividade. Com experiência em desenvolvimento web e design, busco criar soluções inovadoras que façam diferença. Quando não estou codificando, adoro explorar novas tecnologias e colaborar em projetos interessantes.</p>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição do seu projeto aqui. Fale sobre tecnologias usadas e resultados alcançados.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição do seu projeto aqui. Fale sobre tecnologias usadas e resultados alcançados.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição do seu projeto aqui. Fale sobre tecnologias usadas e resultados alcançados.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Design</span>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Estou aberto a oportunidades e sempre feliz em conversar. Sinta-se à vontade para entrar em contato comigo!</p>
+            <div class="contact-links">
+                <a href="mailto:seu.email@exemplo.com">📧 Email</a>
+                <a href="https://linkedin.com" target="_blank">💼 LinkedIn</a>
+                <a href="https://github.com" target="_blank">🐙 GitHub</a>
+                <a href="https://twitter.com" target="_blank">🐦 Twitter</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    const preview = document.getElementById('photoPreview');
+                    const content = document.getElementById('photoContent');
+                    preview.src = event.target.result;
+                    preview.style.display = 'block';
+                    content.style.display = 'none';
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+</html>
